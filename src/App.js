@@ -18,7 +18,7 @@ export default function App() {
         fetchData().catch(console.error)
     
     },[])
-    
+
     function Navbar(){
       return(
         <div style={{ backgroundColor: '#3a3a3a', color:'white', display:'flex', justifyContent:'space-between', padding:'0.5rem 2rem' }}>
@@ -31,10 +31,13 @@ export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div className="pages">
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+      
     </BrowserRouter>
       
    
