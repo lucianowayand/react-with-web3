@@ -22,7 +22,7 @@ export default function App() {
     function Navbar(){
       return(
         <div style={{ backgroundColor: '#3a3a3a', color:'white', display:'flex', justifyContent:'space-between', padding:'0.5rem 2rem' }}>
-            <h1>Test app</h1>
+            <h1><a href="/" style={{color:'white', textDecoration:'none'}}>Test app</a></h1>
             <h1>{String(account).substring(0,5)+"..."+String(account).substring(38)}</h1>
         </div>
       )
